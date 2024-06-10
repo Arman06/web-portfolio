@@ -1,0 +1,68 @@
+.wrapper {
+  background-color: #000;
+  color: #fff;
+  padding-top: 150px;
+}
+.container {
+  margin: 0 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 100px;
+  justify-content: center;
+}
+.aboutImg {
+  margin: 0 auto;
+  animation: slideInUp 1s ease-in-out forwards;
+  transform: translateY(-100%);
+}
+.aboutImg img {
+  border: none;
+  border-radius: 15px;
+  background-color: gray;
+  /* width: 400px;
+  height: 250px; */
+}
+.aboutBlock {
+  margin: 0 auto;
+  padding: 0 20px;
+  animation: slideInUp 1s ease-in-out forwards;
+  transform: translateY(-100%);
+}
+.aboutTitle {
+  font-size: 45px;
+  max-width: 250px;
+}
+.aboutText {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.aboutHobby {
+  margin: 0 auto;
+  font-size: 23px;
+  animation: slideInUp 1s ease-in-out forwards;
+  transform: translateY(-100%);
+}
+.aboutDescription {
+  margin: 0 auto;
+  font-size: 19px;
+  color: #9da094;
+  width: 500px;
+  animation: slideInUp 1s ease-in-out forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
